@@ -12,7 +12,7 @@
     (. anim (play))))
 
 (defn close-menu []
-  (map #(dom-classlist/remove % "show") (.getElementsByClassName js/document "navbar-collapse")))
+  (dom-classlist/remove (first (.getElementsByClassName js/document "navbar-collapse")) "show"))
 
 (defn highlight-menu [no]
   (let [elements (.querySelectorAll js/document ".navbar .navbar-nav > .nav-item")]

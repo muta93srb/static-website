@@ -112,7 +112,7 @@
      [:script {:src "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/js/bootstrap.min.js"}]
      [:script {:src "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"}]
      [:script {:src "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"}]
-     [:script {:src "./static-website/out/main.js"}]]))
+     [:script {:src "/static-website/out/main.js"}]]))
 
 (defn write-html-to-file [file]
   (spit file (render-html)))
